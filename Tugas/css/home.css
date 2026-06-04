@@ -235,10 +235,12 @@
 @media screen and (max-width: 480px){
     .background{
         padding: 100px 20px 0;
+        height: 330px;
     }
 
     .background h1{
         font-size: 32px;
+        line-height: 32px;
     }
 
     .background p{
@@ -246,10 +248,13 @@
     }
 
     .background button{
+        margin-top: 15px;
         width: 160px;
         height: 45px;
     }
-
+    .marketplace{
+        margin: 10px auto;
+    }
     .item{
         flex: 0 0 100%;
     }
@@ -263,4 +268,9 @@
         height: 35px;
         font-size: 16px;
     }
+    .main{
+        text-align: center;
+        margin-top: 30px;
+    }
+
 }
