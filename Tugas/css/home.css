@@ -1,0 +1,266 @@
+.background{
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    padding: 180px 80px;
+    padding-bottom: 0;
+}
+.background::before{
+    content: "";
+    position: absolute;
+    margin-top: 40px;
+    inset: 0;
+    background-image: url(/asset/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(180deg);
+    transform-origin: center;
+    z-index: -1;
+}
+.background h1{
+    font-size: 70px;
+    font-weight: lighter;
+    line-height: 70px;
+}
+.background p{
+    margin-top: 70px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+.background button{
+    margin-top: 40px;
+    width: 20%;
+    height:15%;
+    border-radius: 10px;
+    background-color: #AF7073;
+    font-size: 18px;
+    color: white;
+    border: 0;
+}
+
+.marketplace{
+    width: 90%;
+    margin: 40px auto ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    overflow: visible;
+}
+
+.slider-container{
+    border-radius: 20px;
+    padding: 20px 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    gap: 14px;
+    transition: transform 0.5s ease;
+}
+
+.item{
+    flex: 0 0 calc((100% - 42px) / 4);;
+    background: white;
+    border-radius: 20px;
+    padding: 5px;
+    padding-bottom: 15px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.item img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.item h3{
+    margin-top: 12px;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.item p{
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.arrow{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    background: radial-gradient( #AF7073, #EAD3D2);
+    box-shadow: 0 3px 15px rgba(0,0,0,0.4);
+    transition: 0.3s;
+    flex-shrink: 0;
+}
+.right{
+    transform: rotate(-90deg);
+}
+.left{
+    transform: rotate(90deg);
+}
+.main{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.main .title{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+.background button:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+    box-shadow: 0 3px 15px #AF7073;
+}
+.left:hover{
+    transform: rotate(90deg) scale(1.1);
+    box-shadow: 0 3px 15px #AF7073;
+}
+.right:hover{
+    transform: rotate(-90deg) scale(1.1);
+    box-shadow: 0 3px 15px #AF7073;
+}
+.item:hover{
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 3px 18px #AF7073;
+    z-index: 9999;
+}
+
+@media screen and (max-width: 1024px){
+    .background{
+        padding: 150px 50px 0;
+        height: 480px;
+    }
+
+    .background h1{
+        font-size: 56px;
+        line-height: 58px;
+    }
+
+    .background p{
+        font-size: 24px;
+        margin-top: 40px;
+    }
+
+    .background button{
+        width: 220px;
+        height: 55px;
+    }
+
+    .item{
+        flex: 0 0 calc((100% - 28px) / 3);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .background{
+        height: 450px;
+        padding: 120px 35px 0;
+    }
+
+    .background h1{
+        font-size: 42px;
+        line-height: 45px;
+    }
+
+    .background p{
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .background button{
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .main .title{
+        font-size: 24px;
+    }
+
+    .marketplace{
+        width: 95%;
+        gap: 10px;
+    }
+
+    .slider-container{
+       padding: 10px 5px;
+    }
+
+    .slider{
+        gap: 10px;
+    }
+
+    .item{
+        flex: 0 0 calc((100% - 10px) / 2);
+        min-width: calc((100% - 10px) / 2);
+    }
+
+    .item img{
+        height: 180px;
+    }
+
+    .item h3{
+        font-size: 16px;
+        margin-left: 6px;
+        margin-top: 8px;
+    }
+
+    .item p{
+        font-size: 14px;
+        margin-left: 6px;
+    }
+
+    .arrow{
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .background{
+        padding: 100px 20px 0;
+    }
+
+    .background h1{
+        font-size: 32px;
+    }
+
+    .background p{
+        font-size: 16px;
+    }
+
+    .background button{
+        width: 160px;
+        height: 45px;
+    }
+
+    .item{
+        flex: 0 0 100%;
+    }
+
+    .item img{
+        height: 220px;
+    }
+
+    .arrow{
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
