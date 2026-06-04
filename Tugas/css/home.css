@@ -10,7 +10,7 @@
     position: absolute;
     margin-top: 40px;
     inset: 0;
-    background-image: url(/asset/background.jpg);
+    background-image: url(../asset/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
