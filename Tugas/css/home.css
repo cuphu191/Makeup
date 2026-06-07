@@ -139,9 +139,6 @@
     z-index: 9999;
 }
 
-/* ========================= */
-/* TABLET (<= 1024px) */
-/* ========================= */
 @media screen and (max-width: 1024px){
 
     .background{
@@ -189,9 +186,7 @@
 }
 
 
-/* ========================= */
-/* MOBILE (<= 768px) */
-/* ========================= */
+
 @media screen and (max-width: 768px){
 
     .background{
@@ -260,10 +255,6 @@
     }
 }
 
-
-/* ========================= */
-/* SMALL MOBILE (<= 480px) */
-/* ========================= */
 @media screen and (max-width: 480px){
 
     .background{
