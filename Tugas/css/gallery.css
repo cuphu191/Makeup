@@ -31,16 +31,7 @@ body{
     font-size: 30px;
     font-weight: lighter;
 }
-.background button{
-    margin-top: 40px;
-    width: 20%;
-    height:15%;
-    border-radius: 10px;
-    background-color: #AF7073;
-    font-size: 18px;
-    color: white;
-    border: 0;
-}
+
 .galleryPage{
     margin-top: 25px;
     padding: 35px 80px 60px;
