@@ -23,7 +23,7 @@ body{
 }
 .background h1{
     font-size: 70px;
-    font-weight: lighter;
+    font-weight: bold;
     line-height: 70px;
 }
 .background p{
