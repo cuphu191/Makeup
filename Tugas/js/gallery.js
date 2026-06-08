@@ -1,3 +1,22 @@
+const hamburger = document.getElementById("hamburger");
+const hamburgerIcon = document.getElementById("hamburgerIcon");
+const closeNav = document.getElementById("closeNav");
+const nav = document.querySelector("nav");
+
+hamburger.addEventListener("click", () => {
+
+    nav.classList.add("active");
+    hamburgerIcon.src = "../asset/down.png";
+
+});
+
+closeNav.addEventListener("click", () => {
+
+    nav.classList.remove("active");
+    hamburgerIcon.src = "../asset/more.png";
+
+});
+
 const cards = document.querySelectorAll(".card");
 
 const pageBtns = document.querySelectorAll(".pageBtn");
