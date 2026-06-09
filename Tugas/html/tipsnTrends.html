@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips N Trends</title>
+</head>
+<link rel="stylesheet" href="../css/tipsnTrends.css">
+<link rel="stylesheet" href="../css/nav.css">
+<link rel="stylesheet" href="../css/ftr.css">
+<body>
+    <div class="navbar">
+        <h1>GY'OREAL</h1>
+        
+        <nav>
+            <button class="close-nav" id="closeNav">
+                <img src="../asset/down.png" alt="">
+            </button>
+
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="tipsnTrends.html">Tips & Trends</a>
+            <a href="subscription.html">Subscription</a>
+        </nav>
+        
+        <div class="icon">
+            <img src="../asset/user.png" alt="user">
+            <img src="../asset/bag.png" alt="bag">
+        </div>
+        <button class="hamburger" id="hamburger"><img src="../asset/more.png" id="hamburgerIcon"alt="https://www.flaticon.com/free-icons/hamburger"></button>
+        
+    </div>
+    <div class="background">
+        <h1>Tips & Trends</h1>
+        <p>
+            Beauty tips, makeup techniques,
+            <br> 
+            and the latest trends for You.
+        </p>
+    </div>
+    <section class="tips">
+
+    <div class="filter">
+
+        <button class="active" data-filter="all">
+            All
+        </button>
+
+        <button data-filter="makeup">
+            Makeup Tips
+        </button>
+
+        <button data-filter="trend">
+            Trends
+        </button>
+
+        <button data-filter="skin">
+            Skincare
+        </button>
+
+        <button data-filter="tutorial">
+            Tutorials
+        </button>
+
+    </div>
+
+    <div class="artikel">
+
+        <div class="card" data-kategori="makeup">
+
+            <img src="../asset/Justina xie.jpg" alt="" >
+
+            <div class="isi">
+
+                <h3>
+                    2026 Douyin Makeup Trends You Need to Try
+                </h3>
+
+                <p>
+                    Discover the hottest looks of the year.
+                </p>
+
+                <a href="#" class="readMore" data-artikel="1">
+                    Read More
+                    <img src="../asset/arrow.png" alt="" >
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="card" data-kategori="trend">
+
+            <img src="../asset/shin eun soo.jpg" alt="" >
+
+            <div class="isi">
+
+                <h3>
+                    Korean Makeup Trends For Student
+                </h3>
+
+                <p>
+                    Discover the best looks for student.
+                </p>
+
+                <a href="#" class="readMore" data-artikel="2">
+                    Read More
+                    <img src="../asset/arrow.png" alt="">
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="card" data-kategori="tutorial">
+
+            <img src="../asset/choi hyun wook.jpg" alt="">
+
+            <div class="isi">
+
+                <h3>
+                    How to Make Your Makeup Last All Day
+                </h3>
+
+                <p>
+                    Tips and tricks for long-lasting beauty.
+                </p>
+
+                <a href="#" class="readMore" data-artikel="3">
+                    Read More
+                    <img src="../asset/arrow.png" alt="">
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="card" data-kategori="skin">
+
+            <img src="../asset/tips4.jpg" alt="">
+
+            <div class="isi">
+
+                <h3>
+                    Best Skincare Routine For Beginners
+                </h3>
+
+                <p>
+                    Start taking care of your skin correctly.
+                </p>
+
+                <a href="#" class="readMore" data-artikel="4">
+                    Read More
+                    <img src="../asset/arrow.png" alt="">
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="card" data-kategori="trend">
+
+            <img src="../asset/tips5.jpg" alt="">
+
+            <div class="isi">
+
+                <h3>
+                    Trending Lip Colors This Season
+                </h3>
+
+                <p>
+                    The shades everyone is talking about.
+                </p>
+
+                <a href="#" class="readMore" data-artikel="5">
+                    Read More
+                    <img src="../asset/arrow.png" alt="">
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="card" data-kategori="makeup">
+
+            <img src="../asset/tips6.jpg" alt="">
+
+            <div class="isi">
+
+                <h3>
+                    Everyday Makeup For School
+                </h3>
+
+                <p>
+                    Quick and simple makeup routine.
+                </p>
+
+                <a href="#" class="readMore" data-artikel="6">
+                    Read More
+                    <img src="../asset/arrow.png" alt="">
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="empty" id="emptyMessage">
+
+            <h2>No More Products Available</h2>
+
+            <p>
+                Sorry, there are no more products to display.
+            </p>
+
+        </div>
+    <div class="pagination">
+
+        <button id="prevBtn" class="prevBtn"><img src="../asset/down.png" alt="prev"></button>
+
+        <button class="pageBtn activePage">1</button>
+        <button class="pageBtn">2</button>
+        <button class="pageBtn">3</button>
+
+        <button id="nextBtn" class="nextBtn"><img src="../asset/down.png" alt="next"></button>
+
+    </div>
+</section>
+<div class="popup" id="popup">
+<div class="popup-box">
+
+    <div class="popup-header">
+        <h2 id="popupTitle"></h2>
+
+        <button class="closePopup" id="closePopup">
+            <img src="../asset/down.png" alt="">
+        </button>
+    </div>
+
+    <div class="popup-content">
+        <p id="popupText"></p>
+    </div>
+
+</div>
+</div>
+    <footer class="ftr">
+        <div class="atas">
+            <div class="logoGy">
+                <h2>GY'OREAL</h2>
+            </div>
+            <div class="col1">
+                <h3>Product Title</h3>
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="tipsnTrends.html">Tips & Trends</a>
+                <a href="subscription.html">Subscription</a>
+            </div>
+            <div class="col2">
+                <h3>Customer Care</h3>
+                <a href="">FAQ</a>
+                <a href="">Shipping</a>
+                <a href="">Returns</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="sosmed">
+                <h3>Follow Us</h3>
+                <div class="icons">
+                    <a href="#"><img src="../asset/youtube.png" alt="Youtube"></a>
+                    <a href="#"><img src="../asset/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../asset/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="../asset/tik-tok.png" alt="tiktok"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="bawah">
+            <p>© 2025 GY'OREAL All Rights Reserved.</p>
+
+            <div class="term">
+                <a href="">Terms of Use</a>
+                <a href="">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/tipsnTrends.js"></script>
+</html>

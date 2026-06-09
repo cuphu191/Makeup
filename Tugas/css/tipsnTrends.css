@@ -1,0 +1,277 @@
+html{
+    scroll-behavior: smooth;
+}
+.background{
+    position: relative;
+    overflow: hidden;
+    min-height: 450px;
+    padding: 140px 80px;
+    padding-bottom: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+.background::before{
+    content: "";
+    position: absolute;
+    margin-top: 40px;
+    inset: 0;
+    background-image: url(../asset/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(180deg);
+    transform-origin: center;
+    z-index: -1;
+}
+.background h1{
+    font-size: 70px;
+    font-weight: lighter;
+    line-height: 70px;
+}
+.background p{
+    margin-top: 70px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+.tips{
+    width: 100%;
+    background-color: whitesmoke;
+    padding-bottom: 80px;
+}
+
+.filter{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.filter button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.filter .active{
+    background-color: #e7cfcf;
+}
+
+.artikel{
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px
+}
+
+.card{
+    width: 360px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e2e2e2;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: translateY(-5px) scale(1.005);
+}
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.isi{
+    padding: 15px;
+}
+
+.isi h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.isi p{
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.isi a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    text-decoration: none;
+    color: #c27e7e;
+}
+
+.isi a img{
+    width: 14px;
+    height: 14px;
+}
+
+.pagination{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+.pagination button{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+.prevBtn{
+    transform: rotate(90deg);
+}
+.nextBtn{
+    transform: rotate(-90deg);
+}
+.pagination button:hover, .category button:hover{
+    box-shadow: 0 3px 18px #AF7073;
+}
+.pagination .activePage{
+    background-color: #B67D7D;
+    color: white;
+    border: none;
+}
+.empty{
+    display: none;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.empty h2{
+    margin-bottom: 10px;
+}
+
+.empty p{
+    color: gray;
+}
+.popup{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    z-index: 999;
+}
+
+.popup-box{
+    width: 90%;
+    max-width: 700px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.popup-header{
+    position: sticky;
+    top: 0;
+
+    background-color: white;
+
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #eee;
+
+    z-index: 10;
+}
+
+.popup-content{
+    max-height: 70vh;
+    overflow-y: auto;
+
+    padding: 30px;
+}
+
+.closePopup{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.closePopup img{
+    width: 20px;
+}
+
+@media(max-width: 768px){
+    .background{
+        min-height: 350px;
+        padding: 120px 40px;
+    }
+
+    .background h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .background p{
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    .filter{
+        gap: 10px;
+    }
+
+    .filter button{
+        font-size: 13px;
+    }
+
+    .isi h3{
+        font-size: 18px;
+    }
+    .artikel{
+        width: 95%;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 420px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .card img{
+        height: 180px;
+    }
+    .pagination button{
+        width: 45px;
+        height: 45px;
+    }
+    .filter{
+        gap: 8px;
+        padding: 0 10px;
+    }
+
+    .filter button{
+        font-size: 12px;
+        padding: 7px 15px;
+    }
+    .isi h3{
+        font-size: 17px;
+    }
+
+    .isi p{
+        font-size: 14px;
+    }
+}

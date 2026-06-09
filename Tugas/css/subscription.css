@@ -1,0 +1,180 @@
+.subs{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+
+    padding: 120px 40px;
+
+    background: url("../asset/background2.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.kiri{
+    max-width: 400px;
+}
+
+.kiri h1{
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.kiri p{
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.kanan{
+    width: 500px;
+}
+
+.kanan h2{
+    margin-bottom: 25px;
+}
+
+.input-box{
+    margin-bottom: 15px;
+}
+
+.input-box label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-box input, .input-box select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.agree{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.agree p{
+    font-size: 14px;
+}
+
+.subBtn{
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    border: none;
+
+    background-color: #b67d7d;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.error{
+    margin-top: 15px;
+    color: red;
+}
+
+@media (max-width: 1024px){
+
+    .subs{
+        gap: 70px;
+        padding: 120px 30px;
+    }
+
+    .kiri h1{
+        font-size: 50px;
+    }
+
+    .kiri p{
+        font-size: 18px;
+    }
+
+    .kanan{
+        width: 420px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .subs{
+        flex-direction: column;
+        gap: 50px;
+
+        padding: 120px 25px 80px;
+        text-align: center;
+    }
+
+    .kiri{
+        max-width: 100%;
+    }
+
+    .kiri h1{
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    .kiri p{
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .kanan{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .input-box{
+        text-align: left;
+    }
+
+    .agree{
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .subs{
+        padding: 100px 15px 60px;
+    }
+
+    .kiri h1{
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .kiri p{
+        font-size: 15px;
+    }
+
+    .kanan h2{
+        font-size: 24px;
+    }
+
+    .input-box input, .input-box select{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .subBtn{
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .agree p{
+        font-size: 12px;
+    }
+
+}
